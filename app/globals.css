@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap");
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-dark-500 text-white font-sans;
+    background: linear-gradient(135deg, #2f2d2e 0%, #2e4057 100%);
+  }
+}
+
+@layer components {
+  /* Gaming-focused component styles */
+  .btn-primary {
+    @apply bg-primary-500 hover:bg-primary-600 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-glow focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent hover:bg-white/10 text-white font-bold py-4 px-8 rounded-xl border-2 border-white/20 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+  }
+
+  .btn-hero {
+    @apply relative overflow-hidden bg-gradient-to-r from-primary-500 to-success-500 hover:from-primary-600 hover:to-success-600 text-white px-10 py-5 text-xl font-bold rounded-2xl shadow-glow hover:shadow-glow-lg transform hover:scale-105 transition-all duration-300;
+  }
+
+  .btn-hero-secondary {
+    @apply bg-transparent hover:bg-white/10 text-white px-10 py-5 text-xl font-bold rounded-2xl border-2 border-white/30 hover:border-primary-400 shadow-medium hover:shadow-large transform hover:scale-105 transition-all duration-300;
+  }
+
+  .btn-cta {
+    @apply relative overflow-hidden bg-white hover:bg-gray-50 text-dark-500 px-10 py-5 text-xl font-bold rounded-xl shadow-glow hover:shadow-glow-lg transform hover:scale-105 transition-all duration-300 min-w-[200px];
+  }
+
+  .btn-cta-outline {
+    @apply border-2 border-white/30 text-white hover:bg-white/10 backdrop-blur-sm px-10 py-5 text-xl font-semibold rounded-xl shadow-medium hover:shadow-large transform hover:scale-105 transition-all duration-300 min-w-[200px];
+  }
+
+  .card {
+    @apply bg-white/5 backdrop-blur-md rounded-2xl shadow-card border border-white/10 transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1;
+  }
+
+  .navbar {
+    @apply bg-dark-500/95 backdrop-blur-md border-b border-white/10 shadow-navbar px-8 py-4;
+  }
+
+  .bento-card {
+    @apply bg-white/5 backdrop-blur-md rounded-2xl p-8 flex flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-large border border-white/10;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-500 via-success-500 to-accent-500 bg-clip-text text-transparent;
+  }
+
+  .gradient-bg {
+    @apply bg-gradient-to-r from-primary-500 via-success-500 to-accent-500;
+  }
+
+  .glass-effect {
+    @apply bg-white/10 backdrop-blur-sm border border-white/20;
+  }
+
+  .gaming-card {
+    @apply bg-gradient-to-br from-dark-500 to-secondary-500 rounded-2xl p-6 border border-white/10 shadow-glow hover:shadow-glow-lg transition-all duration-300 hover:-translate-y-2;
+  }
+
+  .floating-animation {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite alternate;
+  }
+
+  .gradient-animation {
+    animation: gradient 3s ease infinite;
+  }
+
+  .section-padding {
+    @apply py-20 sm:py-24 lg:py-32;
+  }
+
+  .container-padding {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+
+  .max-width {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center px-6 py-3 rounded-full bg-accent-500/20 text-accent-400 text-sm font-bold mb-8 border border-accent-500/30;
+  }
+
+  .hero-title {
+    @apply text-6xl sm:text-7xl lg:text-8xl font-black leading-tight;
+  }
+
+  .section-title {
+    @apply text-4xl sm:text-5xl lg:text-6xl font-bold mb-6;
+  }
+
+  .gaming-pattern {
+    background-image: 
+      linear-gradient(45deg, rgba(4, 139, 168, 0.1) 25%, transparent 25%),
+      linear-gradient(-45deg, rgba(4, 139, 168, 0.1) 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, rgba(4, 139, 168, 0.1) 75%),
+      linear-gradient(-45deg, transparent 75%, rgba(4, 139, 168, 0.1) 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .text-shadow-lg {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+
+  .backdrop-blur-sm {
+    backdrop-filter: blur(4px);
+  }
+
+  .backdrop-blur-md {
+    backdrop-filter: blur(12px);
+  }
+
+  .backdrop-blur-lg {
+    backdrop-filter: blur(16px);
+  }
+
+  .glow-text {
+    text-shadow: 0 0 10px rgba(4, 139, 168, 0.5);
+  }
+
+  .glow-border {
+    box-shadow: 0 0 20px rgba(4, 139, 168, 0.3);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0 0 20px rgba(4, 139, 168, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 40px rgba(4, 139, 168, 0.8);
+  }
+}
+
+@keyframes gradient {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}

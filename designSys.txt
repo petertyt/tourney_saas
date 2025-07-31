@@ -1,0 +1,102 @@
+
+## �� Design System
+
+### Colors
+- **Primary**: `#4a90e2` (Blue)
+- **Secondary**: `#222` (Dark Gray)
+- **Background**: `#f8f9fa` (Light Gray)
+- **Text**: `#111827` (Dark)
+- **Muted**: `#6b7280` (Gray)
+
+### Typography
+- **Primary Font**: Inter
+- **Secondary Font**: Poppins
+- **Fallback**: Roboto, sans-serif
+
+### Components
+- **Navigation**: Clean, modern navbar with rounded corners
+- **Buttons**: Pill-shaped with hover effects
+- **Cards**: Subtle shadows and rounded corners
+- **Forms**: Accessible with proper focus states
+
+## �� Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/tourney_saas.git
+   cd tourney_saas
+   ```
+
+2. **Open in your browser**
+   ```bash
+   # Using Python
+   python -m http.server 8000
+   
+   # Using Node.js
+   npx serve .
+   
+   # Or simply open index.html in your browser
+   ```
+
+3. **Navigate to** `http://localhost:8000`
+
+## 📱 Responsive Design
+
+The application is fully responsive and works on:
+- Desktop (1200px+)
+- Tablet (768px - 1199px)
+- Mobile (320px - 767px)
+
+## ♿ Accessibility
+
+- **WCAG 2.1 AA** compliant
+- **Keyboard navigation** support
+- **Screen reader** friendly
+- **Focus indicators** for all interactive elements
+- **Skip links** for main content
+- **Semantic HTML** structure
+
+## 🔧 Development
+
+### CSS Organization
+- `normalize.css` - CSS reset and base styles
+- `mainStyle.css` - Global styles and utilities
+- `header.css` - Navigation and header styles
+- `home.css` - Home page specific styles
+- `footer.css` - Footer styles
+
+### JavaScript Features
+- Smooth scrolling
+- Navigation interactions
+- Button loading states
+- Notification system
+- Mobile menu toggle
+
+## 📄 Pages
+
+- **Home** (`index.html`) - Landing page with hero section
+- **Features** (`pages/features.html`) - Product features (coming soon)
+- **Pricing** (`pages/pricing.html`) - Pricing plans (coming soon)
+- **Browse** (`pages/browse.html`) - Tournament browser (coming soon)
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🆘 Support
+
+- **Documentation**: Check the code comments and this README
+- **Issues**: Report bugs and feature requests via GitHub Issues
+- **Contact**: Reach out via the contact form (coming soon)
+
+---
+
+**Built with ❤️ for the gaming community**
